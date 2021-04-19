@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>webShop 프로젝트입니다.</h1>
+<ul>
+<li><a href="first">첫번째 서블릿 연결</a></li>
+<li><a href="./first">첫번째 서블릿 연결</a></li>
+<li><a href="/webShop/first">첫번째 서블릿 연결</a></li>
+<!-- http://localhost:9090/ -->
+<li><a href="memberForm.html">멤버등록</a></li>
+<li><a href="calc.html">계산기</a></li>
+<li><a href="dept/deptlist">부서조회</a></li>
+<li><a href="emp/emplist">직원조회</a></li>
+<li><a href="login/loginChk.kosta">로그인하기</a></li>
+</ul>
+
+<h2>form(get방식)</h2>
+<form action="first">
+<input type="submit" value="Get 요청하기">
+</form>
+<hr>
+<h2>form(post방식)</h2>
+<form action="first" method="post">
+<input type="submit" value="Post 요청하기">
+</form>
+<hr>
+<h2>Login체크로간다</h2>
+<form action="loginChk.kosta" method="post" enctype="application/x-www-form-urlencoded">
+ID : <input type="text" name="userid">
+PW : <input type="text" name="userpw">
+<input type="submit" value="로그인하기">
+</form>
+</body>
+</html>
